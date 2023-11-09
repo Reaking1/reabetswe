@@ -6,12 +6,17 @@ html {
 body {
   margin: 0;
   font: 300 11px/1.4'Helvetica Neue', sans-serif;
-  color: #ffffff;
-  background: #e03333e3;
+  color: #1f1e1e;
+  background: url('../src/componets/assets/images/web\ background.jpg');
   overflow: hidden;
   display: block;
+  box-shadow: 10px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-size: cover;
+  
+ 
+   /* Adjust as needed */
 }
 
 @media screen and (max-width: 1200px) {

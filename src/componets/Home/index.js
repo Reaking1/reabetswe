@@ -14,7 +14,7 @@ const Home = () => {
     const [letterClass, setLetterClass] = useState("text-animate")
 
     const nameArray = ['e','a','b','e','t','s','w','e',' ','a']
-    const jobArray = ['w','e','b',' ','d','e','v','e','l','o','p','e','r', '.']
+    const jobArray = ['d','e','v','e','l','o','p','e','r', '.']
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -45,10 +45,13 @@ const Home = () => {
                 <Link  to="/contact" className="flat-button">
                     CONTACT ME                    
                 </Link>
+                <Link  to="/portfolio" className="flat-button">
+                    Projects                   
+                </Link>
             </div>
            <Logo />
         </div>
-        <Loader type="pacman"/>
+        <Loader type="pacman" size="lg"/>
         </>
     )
 }

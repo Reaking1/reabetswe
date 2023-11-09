@@ -1,7 +1,12 @@
-
+  .contact-page {
+  h3{
+   font-size: 16px;
+   font-weight: 700;
+   color: #ffffff;
+  }
+  
 .contact-form {
-    width: 100%;
-    margin-top: 20px;
+   
 
     ul {
         padding: 0;
@@ -65,32 +70,38 @@
 
     .flat-button {
         color: #ffffff;
-        font-size: 11px;
+        font-size: 19px;
         background: #000000;
         letter-spacing: 3px;
         text-decoration: none;
         padding: 8px 10px;
-        border: 1px solid #5aeb17;
+        border: 2px solid #050505;
         border-radius: 4px;
         background: 0 0;
         text-align: center;
         float: right;
         margin-right: 10px;
     }
+
+    .flat-button:hover {
+        animation: beatFade 0.1s;
+        background: #f08b08;
+        color: #ffffff;
+    }
 }
 
 .map-wrap {
     background: rgba(154, 16, 209, 0.788);
     float: right;
-    width: 53%;
-    height: 115%;
+    width: 50%;
+    height: 120%;
     margin-top: -3%;
 }
 
 .leaflet-container {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 120%;
     opacity: 0;
     animation: backInRight 1s 1.2s;
     animation-fill-mode: forwards;
@@ -116,23 +127,28 @@
         font-size: 16px;
 
         span {
-            color: #9981ca;
+            color: #804ce7;
         }
         
 
     }
 }
 
+  }
 @media screen and (max-width: 1200px) {
     .map-wrap {
         float: none;
         margin: 0;
-        width: 100%;
-        height: 400px;
+        width: 90%;
+        height: 4px;
     }
 
     .info-map {
         display: none;
     }
+
+    
     
 }
+
+

@@ -1,65 +1,39 @@
-import Loader from 'react-loaders';
-import AnimatedLetters from '../AnimatedLetters';
-import './index.scss'
-import { useEffect, useState } from "react"
-import { collection, getDocs } from 'firebase/firestore';
-import { db } from '../../firebase';
+import './Portfolio.scss'
+//images
+import blog3 from '../assets/images/blog3.png'
+import Twopic from '../assets/images/portone.png'
+
 
 const Portfolio = () => {
-   const [letterClass,setLetterClass] = useState('text-animate');
-   const [Portfolio,setPortfolio] = useState([]);
-
-
-   useEffect(() => {
-    const timer = setTimeout(() => {
-      return setLetterClass('text-animate-hover')
-    }, 4000);
-    return () => clearTimeout(timer);
-  }, []);
-
-  useEffect(() => {
-    getPortfolio();
-  } ,[]);
-
-  const getPortfolio = async () => {
-    const querySnapshot = await getDocs(collection(db, 'Portfolio'));
-    setPortfolio(querySnapshot.docs.map((doc) => doc.data()));
-  }
-
-  const renderPortfolio = (Portfolio) => {
     return (
-        <div className='images-container'>
-            {
-                Portfolio.map((port, idx) => {
-                    return (
-                        <div className='image-box' key={idx}>
-                            <img src={port.image} className='Portfolio-image' alt='Portfolio'/>
-                            <div className='content'>
-                                <p className='title'>{port.name}</p>
-                                <h4 className='title'>{port.description}</h4>
-                                <button className='btn' onClick={() => window.open(port.url)}>View</button>
-                            </div>
-                        </div>
-                    )
-                })
-            }
+        <>
+        <div className='title'>
+            <h1>Projects that I have worked with and done</h1>
         </div>
+            <div className='project'>
+                <img src={Twopic} alt='any' className='project-image'/>
+                <div className='project-details'>
+                    <h3>Workout app</h3>
+                    <p>the project will be placed soon...Note this will be better soon as we make the layout active</p>
+                </div>
+            </div>
+
+            <div className='project'>
+              <a href='https://blog-puce-eight.vercel.app/blog'>
+                <img src={blog3} alt='any' className='project-image'/>
+               
+                <div className='project-details'>
+                    <h3>My own personal blog</h3>
+                    <p>the project will be placed soon...Note this will be better soon as we make the layout active</p>
+                    
+                </div>
+                </a>
+            </div>
+          
+          
+           
+        </>
     )
-  }
+}
 
-
-  return (
-    <>
-    <div className='container portolio-page'>
-        <h1 className='page-title'>
-            <AnimatedLetters letterClass={letterClass} strArray={"Portfolio".split("")}/>
-        </h1>
-        <div>{renderPortfolio(Portfolio)}</div>
-    </div>
-    <Loader type='pacman' />
-    </>
-  )
-} 
-
-
-export default Portfolio 
+export default Portfolio

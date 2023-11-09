@@ -40,7 +40,7 @@ const Contact = () => {
             <h1>
                 <AnimatedLetters letterClass={letterClass} strArray={['C','o','n','t','a','c','t',' ','m','e']}/>
             </h1>
-            <p>I am interested in tackling problems, getting extra work done and freelance opportunities-this mainly apply to bold or large projects. However, if you have other questions or requests, please do not hesitate to contact me using the form below. </p>
+            <h3>I am interested in tackling problems, getting extra work done and freelance opportunities-this mainly apply to bold or large projects. However, if you have other questions or requests, please do not hesitate to contact me using the form below. </h3>
             
             <div className="contact-form">
                 <form ref={refForm} onSubmit={sendEmail}>

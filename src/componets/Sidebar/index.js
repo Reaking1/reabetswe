@@ -35,14 +35,14 @@ const Sidebar = () => {
           activeclassname="active"
           to="/"
           onClick={() => setShowNav(false)}>
-          <FontAwesomeIcon icon={faHome}  color='black' />
+          <FontAwesomeIcon icon={faHome}  color='white' />
         </NavLink>
         <NavLink 
           activeclassname="active"
           className="about-link"
           to="/about"
           onClick={() => setShowNav(false)}>
-          <FontAwesomeIcon icon={faUser}  color='black' />
+          <FontAwesomeIcon icon={faUser}  color='white' />
         </NavLink>
         <NavLink
           activeclassname="active"
@@ -50,7 +50,7 @@ const Sidebar = () => {
           to="/portfolio"
           onClick={() => setShowNav(false)}
         >
-          <FontAwesomeIcon icon={faSuitcase}  color='black' />
+          <FontAwesomeIcon icon={faSuitcase}  color='white' />
         </NavLink>
         <NavLink
           activeclassname="active"
@@ -58,29 +58,29 @@ const Sidebar = () => {
           to="/contact"
           onClick={() => setShowNav(false)}
         >
-          <FontAwesomeIcon icon={faEnvelope}  color='black' />
+          <FontAwesomeIcon icon={faEnvelope}  color='white' />
         </NavLink>
         <FontAwesomeIcon 
           onClick={() => setShowNav(false)}
           icon={faClose}
-          color="black"
+          color="white"
           size="3x"
           className='close-icon' />
       </nav>
       <ul>
       <li>
      <a href="https://www.linkedin.com/in/ramoswane-reabetswe-b0a769242/">
-      <FontAwesomeIcon  icon={faLinkedin} color="black" className="anchor-icon"/>
+      <FontAwesomeIcon  icon={faLinkedin} color="white" className="anchor-icon"/>
      </a>
     </li>
     <li>
      <a href="https://github.com/Reaking1">
-      <FontAwesomeIcon  icon={faGithub} color="black" className="anchor-icon"/>
+      <FontAwesomeIcon  icon={faGithub} color="white" className="anchor-icon"/>
      </a>
     </li>
     <li>
      <a href="https://www.instagram.com/reabetswetheghost/">
-      <FontAwesomeIcon  icon={faInstagram} color="black" className="anchor-icon"/>
+      <FontAwesomeIcon  icon={faInstagram} color="white" className="anchor-icon"/>
      </a>
     </li>
       </ul>
