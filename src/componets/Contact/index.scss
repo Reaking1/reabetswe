@@ -71,11 +71,11 @@
     .flat-button {
         color: #ffffff;
         font-size: 19px;
-        background: #000000;
+        background: rgb(189, 38, 194);
         letter-spacing: 3px;
         text-decoration: none;
         padding: 8px 10px;
-        border: 2px solid #050505;
+        border: 2px solid rgb(189, 38, 194);
         border-radius: 4px;
         background: 0 0;
         text-align: center;
@@ -83,10 +83,11 @@
         margin-right: 10px;
     }
 
+        
     .flat-button:hover {
         animation: beatFade 0.1s;
-        background: #f08b08;
-        color: #ffffff;
+        background: #ff4b4b;
+        color: white;
     }
 }
 

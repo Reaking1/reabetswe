@@ -5,7 +5,7 @@ import LogoSubtitle from '../assets/images/logo_sub-r.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faLinkedin,
-  faGithub, faInstagram
+  faGithub, faInstagram, faTwitch
 } from '@fortawesome/free-brands-svg-icons'
 import {
   faHome,
@@ -81,6 +81,11 @@ const Sidebar = () => {
     <li>
      <a href="https://www.instagram.com/reabetswetheghost/">
       <FontAwesomeIcon  icon={faInstagram} color="white" className="anchor-icon"/>
+     </a>
+    </li>
+    <li>
+     <a href="https://www.instagram.com/reabetswetheghost/">
+      <FontAwesomeIcon  icon={faTwitch} color="white" className="anchor-icon"/>
      </a>
     </li>
       </ul>

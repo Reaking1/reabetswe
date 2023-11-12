@@ -1,9 +1,8 @@
 import './index.scss'
-
+import Logo from './Logo'
 import { useEffect, useState } from 'react'
 import {Link} from 'react-router-dom'
 import LogoTitle from '../assets/images/logo-r-black.png'
-import Logo from './Logo'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 
@@ -41,7 +40,7 @@ const Home = () => {
                     
                      <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={15}/>
                 </h1>
-                <h2>Front End Developer / Javascript Expert / React Expert / Twicth Streamer</h2>
+                <h2>JavaScript to React.js expert and Streamer</h2>
                 <Link  to="/contact" className="flat-button">
                     CONTACT ME                    
                 </Link>
@@ -49,7 +48,7 @@ const Home = () => {
                     Projects                   
                 </Link>
             </div>
-           <Logo />
+          <Logo/>
         </div>
         <Loader type="pacman" size="lg"/>
         </>

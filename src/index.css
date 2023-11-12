@@ -7,19 +7,20 @@ body {
   margin: 0;
   font: 300 11px/1.4'Helvetica Neue', sans-serif;
   color: #1f1e1e;
-  background: url('../src/componets/assets/images/web\ background.jpg');
+  background: rgba(22, 211, 157, 0.899);
   overflow: hidden;
   display: block;
-  box-shadow: 10px;
+  box-shadow: 20px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-repeat: none;
   background-size: cover;
+  background-position: center center;
   
- 
    /* Adjust as needed */
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1700px) {
 
   body {
     overflow: visible;
