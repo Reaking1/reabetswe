@@ -20,7 +20,7 @@ body {
    /* Adjust as needed */
 }
 
-@media screen and (max-width: 1700px) {
+@media screen and (max-width: 1200px) {
 
   body {
     overflow: visible;

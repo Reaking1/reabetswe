@@ -41,7 +41,15 @@ const Portfolio = () => {
                 </a>
             </div>
 
-            
+            <div className='project'>
+              <a href='https://blog-puce-eight.vercel.app/blog'>
+                <img src={blog3} alt='any' className='project-image'/>
+                <div className='project-details'>
+                    <h3>My own personal blog</h3>
+                    <p>In this project, I have created a blog to describe the journey of a developer and streamer. My aim was to provide a more comprehensive perspective on what it's like to start a career in tech and the requirements for becoming a successful streamer. However, I encountered challenges with promoting the blog.</p> 
+                </div>
+                </a>
+            </div>
             <Loader  type="pacman" size="lg" />
         </>
     )
